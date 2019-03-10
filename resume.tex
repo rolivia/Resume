@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Rian Shambaugh
+% Website: https://github.com/rolivia
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Rian Shambaugh} & Email : \href{mailto:rian.shambaugh@gmail.com}{rian.shambaugh@gmail.com}\\
+   & Mobile : 757-812-4482 \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {University of Massachusetts Amherst}{Amherst, MA}
+      {Graduate Research Assistant}{Jun 2015 - Aug 2018}
+      \resumeItemListStart
+        \resumeItem{Rehearsal}
+          {Rehearsal is a tool for verifying particular properties of Puppet configurations. Puppet is a domain specific language for specifying system configurations. The language is prone to non-deterministic behavior. Rehearsal verifies that a particular Puppet program is deterministic. This work was published at the Programming Language Design and Implementation Conference in 2016, where it won the Distinguished Artifact Award. The full paper can be found at  \href{https://arxiv.org/pdf/1509.05100.pdf}{https://arxiv.org/pdf/1509.05100.pdf}}.
+        \resumeItem{Fission}
+            {Fission is a platform that dynamically splits a single JavaScript program into the appropriate client and server programs. This work appeared at the Summit on Advances in Programming Languages in 2017.
+          The paper can be found at {\href{http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf}{http://drops.dagstuhl.de/opus/volltexte/2017/7124/pdf/LIPIcs-SNAPL-2017-5.pdf}}}.
+        \resumeItem{Advisor}
+            {Arjun Guha, Assistant Professor. arjun@cs.umass.edu}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {University of Massachusetts Amherst}{Amherst, MA}
+      {Grader for Programming Methodology}{Jan 2016 - May 2016}
+      \resumeItemListStart
+        \resumeItem{Taught Lab Section}
+          {Was responsible for teaching a lab section for the sophomore level course. The course was taught in Scala and focused on functional programming fundamentals such as recursion and higher order methods.}
+        \resumeItem{Office Hours}
+          {Held weekly office hours to help students with assignments.}
+        \resumeItem{Piazza}
+          {Answered student's questions on Piazza about assignments and concepts.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {The George Washington University}{Washington, DC}
+      {Computer Science Tutor}{Sep 2013 - May 2015}
+      \resumeItemListStart
+        \resumeItem{Individual Tutoring}
+          {Tutored Computer Science majors in various courses such as Introduction to Software Development, Data Structures, Discrete Structures I and II, Computer Architecture, Algorithms, Operating Systems, and Foundations of Computing. Assisted students in learning concepts taught in these courses and how to apply them to assignments.}
+        \resumeItem{Study Hall}
+          {Helped organize and run a weekly study hall in the Computer Science department. Donated my time to tutor any underclassmen that decided to attend. Encouraged other upperclassmen to attend to help other students.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+        {The George Washington University}{Washington, DC}
+        {Learning Assistant}{Fall Semesters 2013 and 2014}
+        \resumeItemListStart
+            \resumeItem{Computer Architecture}
+                {Attended lectures once a week. Assisted students with in-class assignments by answering questions about topics covered in the lecture.}
+            \resumeItem{Discrete Structures II}
+                {Attended all lectures and answered questions when students worked on practice exercises. Answered student questions on Piazza.}
+            \resumeItem{Introduction to Software Development}
+                {Attended all lab sections and helped students with lab assignments and homework. Assisted in lessons taught at the beginning of each lab meeting. Answered questions on Piazza.}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+        {Naval Research Laboratory}{Washington, DC}
+        {Computer Science Intern}{Summer 2014}
+        \resumeItemListStart
+            \resumeItem{Secure 2-way Communication Device}
+                {This system allows data to pass from a low security machine to a high security machine without leaking secret information back to the low security machine. It also allows for declassified data to securely pass from the high security machine to the low security one. Since this was a temporary position, I took extra care to write high quality unit and integration tests as well as detailed documentation. I also used Coverity to statically check my code for bugs. Due to a project backlog that existed prior to my time at NRL and persisted all summer, the "merge master" was unable to merge my tickets until after I left. Due to the documentation and tests I wrote, the merge was successful without my involvement.}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+        {The George Washington University}{Washington, DC}
+        {Undergraduate Research Assistant}{June 2013 - May 2014}
+        \resumeItemListStart
+            \resumeItem{BlogBench}
+                {Website benchmarking tool based on the Wordpress blogging platform. This system generates content for Wordpress blogs that model real-world websites. Number and size of posts and images are sampled from distributions which model Wordpress backed websites. Blogbench models clients connecting to and navigating the sites using the Faban workload generator. I presented a poster about this work  at the George Washington University SEAS Research and Development Showcase in 2014.}
+            \resumeItem{Advisor}
+                {Tim Wood, Associate Professor. 202 994-1918. timwood@gwu.edu }
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Massachusetts Amherst}{Amherst, MA}
+      {Master of Science in Computer Science;  GPA: 3.64; Specialty: Programming Languages}{Aug. 2015 -- Sep. 2018}
+    \resumeSubheading
+      {The George Washington University}{Washington, DC}
+      {Bachelor of Science in Computer Science}{Aug. 2011 -- May. 2015}
+  \resumeSubHeadingListEnd
+  
+
+%-----------Affiliations-----------------
+\section{Affiliations}
+  \resumeSubHeadingListStart
+    \resumeSubItem{The Boys and Girls Club}
+      {Volunteer. Oct 2018 - present. Supervisor: Richard Ruffin. 757-223-0101. rruffin@bagclub.com}
+    \resumeSubItem{PLDI Student Volunteers}
+      {Volunteer. 2016}
+    \resumeSubItem{UMass CSWomen}
+      {Social Chair and member. Fall 2015 - Spring 2018}
+    \resumeSubItem{ACM GW Chapter}
+      {Member. Fall 2011 - Spring 2015.}
+    \resumeSubItem{Ladies of Science in the City}
+      {Tutor. Fall 2012}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Javascript, Node.js, Scala, Python, Java, C, SQL, Bash}
+     \hfill
+     \textbf{Technologies}{: Linux, AWS, Git, JUnit}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
